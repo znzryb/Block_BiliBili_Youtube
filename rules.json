@@ -3,10 +3,13 @@
     "id": 1,
     "priority": 1,
     "action": {
-      "type": "block"
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#]+\\.)*bilibili\\.com([/?#]|$)",
+      "urlFilter": "||bilibili.com^",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   },
@@ -14,10 +17,13 @@
     "id": 2,
     "priority": 1,
     "action": {
-      "type": "block"
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#]+\\.)*youtube\\.com([/?#]|$)",
+      "urlFilter": "||youtube.com^",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   },
@@ -25,10 +31,13 @@
     "id": 3,
     "priority": 1,
     "action": {
-      "type": "block"
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/blocked.html"
+      }
     },
     "condition": {
-      "regexFilter": "^https?://([^/?#]+\\.)*youtu\\.be([/?#]|$)",
+      "urlFilter": "||youtu.be^",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   }
