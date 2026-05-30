@@ -6,7 +6,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||bilibili.com",
+      "regexFilter": "^https?://([^/?#]+\\.)*bilibili\\.com([/?#]|$)",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   },
@@ -17,7 +17,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||youtube.com",
+      "regexFilter": "^https?://([^/?#]+\\.)*youtube\\.com([/?#]|$)",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   },
@@ -28,7 +28,7 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||youtu.be",
+      "regexFilter": "^https?://([^/?#]+\\.)*youtu\\.be([/?#]|$)",
       "resourceTypes": ["main_frame", "sub_frame"]
     }
   }
