@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Block BiliBili YouTube",
+  "version": "1.0.0",
+  "description": "Blocks access to Bilibili and YouTube websites.",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": [
+    "*://*.bilibili.com/*",
+    "*://bilibili.com/*",
+    "*://*.youtube.com/*",
+    "*://youtube.com/*",
+    "*://*.youtu.be/*",
+    "*://youtu.be/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "blocked_sites",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}
